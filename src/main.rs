@@ -96,28 +96,6 @@ fn main() {
         print!("autocomplete> ");
         io::stdout().flush().unwrap();
 
-        // let mut line = String::new();
-        // if let Ok(_) = io::stdin().read_line(&mut line) {
-        //     line = line.trim().to_string();
-
-        //     if line.starts_with(":find") {
-        //         let mut spliterator = line.split_whitespace();
-        //         spliterator.next();
-        //         if let Some(word) = spliterator.next() {
-        //             let result = root.find(word.chars().peekable());
-        //             println!("Found: {:?}", result);
-        //         }
-        //     } else if line.starts_with(":") {
-        //         let res = root.get_start(String::from(&line[1..]).chars().peekable());
-        //         print!("{:#?}", res);
-        //     } else if !line.is_empty() {
-        //         root.insert(line.chars().peekable());
-        //         print!("{:#?}", root);
-        //     }
-        // } else {
-        //     println!("Incorrect input");
-        // }
-
         let mut buffer = String::new();
 
         if let Ok(_) = io::stdin().read_line(&mut buffer) {

@@ -2,17 +2,17 @@
 
 Provide the following CLI functionality:
 
-```
-autocomplete> insert "word"
-autocomplete> insert "world"
-autocomplete> insert "worst"
-autocomplete> insert "worm"
-autocomplete> insert "wreck"
-autocomplete> complete "wr"
+```bash
+autocomplete> insert word
+autocomplete> insert world
+autocomplete> insert worst
+autocomplete> insert worm
+autocomplete> insert wreck
+autocomplete> complete wr
 autocomplete> ["wreck"]
-autocomplete> complete "wor"
+autocomplete> complete wor
 autocomplete> ["word", "world", "worst", "worm"]
-autocomplete> complete "wor" --top 2
+autocomplete> complete wor --top 2 # not supported yet
 autocomplete> ["word", "worm"]
 ```
 
